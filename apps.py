@@ -7,3 +7,15 @@ def multiplyList(givenList):
     for n in givenList:
         product = product * n
     return product
+
+def main():
+    userInput = input("Input a list of numbers separated by spaces: ")
+    userList = [int(x) for x in userInput.split()]
+    userSum = sumList(userList)
+    userProduct = multiplyList(userList)
+
+    print("Sum: ", userSum, '\n')
+    print("Product: ", userProduct)
+
+if __name__ == "__main__":
+    main()
