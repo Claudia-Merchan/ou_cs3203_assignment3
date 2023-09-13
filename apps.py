@@ -13,9 +13,11 @@ def main():
     userList = [int(x) for x in userInput.split()]
     userSum = sumList(userList)
     userProduct = multiplyList(userList)
+    userReverse = reverse(userList)
 
     print("Sum: ", userSum, '\n')
     print("Product: ", userProduct)
+    print("Reversed: ", userReverse)
 
 if __name__ == "__main__":
     main()
